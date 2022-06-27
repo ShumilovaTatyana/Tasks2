@@ -5,11 +5,11 @@
 
 Console.Write("Введите номер дня недели: ");
 int num = Convert.ToInt32(Console.ReadLine());
-if (num == 6 || num == 7)
+if (num == 6 && num == 7)
 {
      Console.WriteLine("да");
 }
-else if (num < 1  || num > 7)
+else if (num < 1 || num > 7)
 {
      Console.WriteLine("Ошибка ввода!");
 }
