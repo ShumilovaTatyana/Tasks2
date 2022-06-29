@@ -5,11 +5,19 @@
 // 23432 -> да
 
 Console.WriteLine("Введите пятизначное число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-string GetPalindrom(int a, int b, int c, int d, int e)
+int num[0] = Convert.ToInt32(Console.ReadLine());
+// void GetPalindrom (num)
+if (num[0] == num[4] && num[1] == num[3])
 {
-    if (a == e && b == d) return "да";
-    return "нет";
+    Console.WriteLine($"да");
 }
-string result = GetPalindrom(num);
-Console.WriteLine(result);
+else
+{
+  Console.WriteLine($"нет");  
+}
+// {
+//     if (num[0] == num[4] && num[1] == num[3]) return "да";
+//     return "нет";
+// }
+// string result = GetPalindrom(num);
+// Console.WriteLine(result);
