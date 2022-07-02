@@ -6,20 +6,9 @@
 
 // Console.WriteLine("Введите пятизначное число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
-// int num1 = -num;
-// void GetPalindrom (num)
-// if (num1 == num)
-// {
-//     Console.WriteLine($"да");
-// }
-// else
-// {
-//     Console.WriteLine($"нет");
-// }
-// {
+// void GetPalindrom (num);
 //     if (num[0] == num[4] && num[1] == num[3]) return "да";
 //     return "нет";
-// }
 // string result = GetPalindrom(num);
 // Console.WriteLine(result);
 
@@ -27,7 +16,7 @@
 Console.Write("Введите число: ");
 string number = Console.ReadLine();
 
-void CheckingNumber(string number);
+void CheckPalindrom(string number1);
 {
     if (number[0] == number[4] || number[1] == number[3])
     {
@@ -35,8 +24,16 @@ void CheckingNumber(string number);
 }
     else Console.WriteLine($"нет");
 }
-// if (number!.Length == 5)
+string checkPalindrom = CheckPalindrom(number);
+
+
+
+// int[] array = { };
+// int index = 0;
+// void GetPalindrom(Array);
+
+// while (index < array.Length)
 // {
-//  CheckingNumber(number);
+//     if (index[0] == index[4] && index[1] == index[3]) Console.Write($"да");
+//     else Console.Write($"нет");
 // }
-// else Console.WriteLine($"ошибка ввода!");
