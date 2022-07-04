@@ -2,30 +2,16 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-// Console.WriteLine("Введите число А: ");
-// int number = Convert.ToInt32(Console.ReadLine());
-// int sum = 0;
-// for (int i =1; i <= number; i++)
-// {
-//     sum += i; //sum = sum + i;
-
-//     if(i < number) Console.Write($"{i} + ");
-//     else Console.Write($"{i} = ");
-// }
-//  Console.WriteLine($"{sum}");
-
 Console.WriteLine("Введите число A: ");
-int numa = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B: ");
-int numb = Convert.ToInt32(Console.ReadLine());
-int RaiseDegree = num;
+int b = Convert.ToInt32(Console.ReadLine());
+int RaiseDegree = a;
 {
-    int raiseDegree1 = 1;
-    for(int i = 1; i <= num; i++)
+    for(int i = 1; i < b; i++)
     {
-        raiseDegree1 = numa^numb;
+        RaiseDegree = RaiseDegree * a;
     }
-    return raiseDegree1;
 }
-int raiseDegree = RaiseDegree(num);
-Console.WriteLine($"Число А {numa} в степени числа B {numb} = {RaiseDegree}");
+Console.WriteLine($"Число {a} в степени числа {b} = {RaiseDegree}");
+// Math.Pow
