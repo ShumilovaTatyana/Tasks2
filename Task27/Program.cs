@@ -5,14 +5,16 @@
 
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int Sum (int num1)
+int Sum(int num1)
 {
     int sum1 = 0;
-    for(int i = 1; i <= num1; i++)
+    while (num > 0)
     {
-        sum1 = sum1 + i;
+        sum1 = sum1 + num % 10;
+        num = num / 10;
     }
     return sum1;
 }
 int sum = Sum(num);
-Console.WriteLine($"Сумма чисел {num} = {sum}");
+Console.WriteLine($"Сумма чисел = {sum}");
+
