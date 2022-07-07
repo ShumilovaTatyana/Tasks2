@@ -28,7 +28,7 @@ void PrintArray(int[] arr)
 }
 PrintArray(newArray);
 
-35
+Задача 35.
 int[] CreateArrayRndInt(int size)
 {
     int[] array = new int[size];
