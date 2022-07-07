@@ -40,5 +40,5 @@ void PrintArray(int[] arr)
     }
 }
 int[] array = CreateArrayRndInt1(8);
-PrintArray(array);
+PrintArray(array1);
 
