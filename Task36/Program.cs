@@ -18,17 +18,15 @@ int[] CreateArrayRndInt(int size)
     return array;
 }
 
-// int[] array1 = CreateArrayRndInt(4);
-
 int[] GetSumOddElem(int[] arr)
 {
 int sum = 0;
-for (int i = 0; i < arr.Length; i += 1)
+for (int i = 0; i < arr.Length; i++)
 {
-    // if (arr[i]  % 2 != 0)
-    // {
+    if (i % 2 != 0)
+     {
         sum = sum + arr[i];
-    // }
+     }
 }
 return new[] {sum};
 }
