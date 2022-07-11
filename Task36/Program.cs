@@ -10,11 +10,35 @@ int[] CreateArrayRndInt(int size)
 
     while (index < array.Length)
     {
-        array[index] = rnd.Next(0, 200);
+        array[index] = rnd.Next(0, 100);
         Console.Write(array[index] + " ");
         index++;
         
     }
     return array;
 }
-int[] array1 = CreateArrayRndInt(5);
+
+// int[] array1 = CreateArrayRndInt(4);
+
+int[] GetSumOddElem(int[] arr)
+{
+int sum = 0;
+for (int i = 0; i < arr.Length; i += 1)
+{
+    // if (arr[i]  % 2 != 0)
+    // {
+        sum = sum + arr[i];
+    // }
+}
+return new[] {sum};
+}
+
+int[] array = CreateArrayRndInt(4);
+int[] getSumOddElem = GetSumOddElem(array);
+
+Console.WriteLine();
+Console.WriteLine($"суммa элементов, стоящих на нечётных позициях = {getSumOddElem[0]}");
+
+// int [] sum = GetSumOddElem(array1);
+// Console.WriteLine();
+// Console.WriteLine($"суммa элементов, стоящих на нечётных позициях = {GetSumOddElem[0]}");
