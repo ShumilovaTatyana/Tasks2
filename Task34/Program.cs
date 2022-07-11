@@ -10,23 +10,23 @@ int[] CreateArrayRndInt(int size)
 
     while (index < array.Length)
     {
-        array[index] = rnd.Next(0, 200);
+        array[index] = rnd.Next(100, 1000);
         Console.Write(array[index] + " ");
         index++;
         
     }
     return array;
 }
-int[] array1 = CreateArrayRndInt(5);
+int[] array1 = CreateArrayRndInt(4);
 
 
-int FindNum(int[] arr)
+int ShowQuantity(int[] arr)
 {
     int i = 0;
     int count = 0;
     while (i < arr.Length)
     {
-        if (arr[i] >= 10 && arr[i] <= 99)
+        if (arr[i] % 2 == 0)
             count = count + 1;
         i++;
         
@@ -34,6 +34,6 @@ int FindNum(int[] arr)
     return count;
 }
 
-int count1= FindNum(array1);
+int count1= ShowQuantity(array1);
 Console.WriteLine();
-Console.WriteLine(count1);
+Console.WriteLine($"количество чётных чисел в массиве = {count1}");
