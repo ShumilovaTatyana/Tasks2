@@ -35,11 +35,12 @@ for (int i = 0; i < arr.Length; i++)
 return new[] {min, max};
 }
 
+//int Raznitsa
 int[] array = CreateArrayRndInt(5);
 int[] getMaxElemMinElem = GetMaxElemMinElem(array);
 
 Console.WriteLine();
-Console.WriteLine($"Максимальное значение = {max}, минимальное значение = {min}");
-Console.WriteLine($"Разница между максимальным и минимальным значением = {max - min}");
+Console.WriteLine($"Максимальное значение = {getMaxElemMinElem[1]}, минимальное значение = {getMaxElemMinElem[0]}");
+Console.WriteLine($"Разница между максимальным и минимальным значением = {getMaxElemMinElem[1] - getMaxElemMinElem[0]}");
 
 
