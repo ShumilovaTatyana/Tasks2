@@ -33,27 +33,3 @@ Console.WriteLine();
 Console.WriteLine($"сколько чисел больше 0 ввёл пользователь = {showQuantity}");
 
 
-//  Console.WriteLine("Введите M чисел");
-//             int n = int.Parse(Console.ReadLine());
-//             int[] a = new int[n];
-//             for(int i = 0;i<n;i++)
-//             {
-//                 Console.WriteLine("Введите {0}-й элемент", i + 1);
-//                 a[i] = int.Parse(Console.ReadLine());
-//             }
-//             int k = 0;
-//             for (int i = 0; i < a.Length; i++) 
-//                 if (a[i] % 2 == 0) 
-//                     k++;  
-//             Console.WriteLine(k);
-//             Console.ReadKey();
-
-// //
-// int[] a = new int[];
-// Console.WriteLine("Введите 5 чисе: ");
-// for (int i = 0; i < a.Length; i++)
-// {
-//     Console.Write($"Введите a[{i}]: ");
-//     a[i] = int.Parse(Console.ReadLine()); 
-// }
-

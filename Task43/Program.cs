@@ -21,7 +21,7 @@ double Peresechenie(int x1, int y1, int x2, int y2)
 double peresechenie = Peresechenie(b1, k1, b2, k2);
 Console.WriteLine(peresechenie);
 
-// ("Точка пересечения: (', x, ';', k1*x + b1, ')");
+
 
 // double GetDistance(int a1, int b1, int c1, int a2, int b2, int c2)
 // {
