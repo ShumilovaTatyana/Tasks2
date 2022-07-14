@@ -1,6 +1,4 @@
-﻿// Задача 49. Задайт двумерный массив размером m на n. 
-// Найти элементы, у которых оба индекса четные и заментие эти элементы на их квадраты
-
+﻿//Задача 51. Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали с интексами (0,0); (1,1)
 
 Console.WriteLine("Введите количетсво строк: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
@@ -40,20 +38,21 @@ void PrintMatrix(int[,] arr)
     }
 }
 
-void ChangeEvenIndex(int[,] arr)
+int FindSumMainDiag(int[,] arr)
 {
+    int res = 0;
     for (int i = 0; i < arr.GetLength(0); i++)
     {
-        for (int j = 0; j < arr.GetLength(1); j++) ;
-        {
-            if (i % 2 == 0 && j % 2 == 0) arr[i, j] = arr[i, j] * arr[i, j];
+        for (int j = 0; j < arr.GetLength(1); j++)
+       {
+            if (i == j) res += arr[i, j];
         }
     }
-
+    return res;
 }
 
 int[,] matrix = CreateMatrixRndInt(num1, num2, minElem, maxElem);
 PrintMatrix(matrix);
 Console.WriteLine();
-ChangeEvenIndex(matrix);
-PrintMatrix(matrix);
+int sum = FindSumMainDiag(matrix);
+Console.WriteLine(sum);
