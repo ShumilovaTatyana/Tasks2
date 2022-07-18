@@ -30,5 +30,5 @@ void PrintMatrix(int[,] arr)
     }
 }
 
-int[,] matrix = CreateMatrixRndInt(3, 4, 1, 20);
+int[,] matrix = CreateMatrixRndInt(4, 4, 10, 100);
 PrintMatrix(matrix);

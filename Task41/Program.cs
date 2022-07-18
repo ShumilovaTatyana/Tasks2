@@ -2,6 +2,9 @@
 // 0, 7, 8, -2, -2 -> 2
 // -1, -7, 567, 89, 223-> 3
 
+// В задаче 41 в решении вводятся числа, а в цикле они для подсчёта не используются.
+// Цикл не работает, т.к. в метод передаётся 0 (numm) и count = 0.
+
 Console.Write("Введите число 1: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число 2: ");
@@ -20,7 +23,7 @@ int ShowQuantity(int num)
     int count = 0;
     while (i < num)
     {
-        if (num > 0)
+        if (num1 > 0 && num2 > 0 && num3 > 0 && num4 > 0 && num5 > 0)
             count = count + 1;
         i++;
 

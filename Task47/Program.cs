@@ -4,26 +4,27 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
+
 double[,] CreateMatrixRndInt(int m, int n, int min, int max)
 {
-    double[,] array = new double[m,  n];
+    double[,] array = new double[m, n];
     var rnd = new Random();
 
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = rnd.Next (min, max + 1);
+            array[i, j] = Math.Round((rnd.NextDouble() * (max - min) + min), 2);
         }
     }
 return array;
 }
 
-void PrintMatrix(int[,] arr)
+void PrintMatrix(double[,] arr)
 {
-    for (int i = 0; i < arr.GetLength(0); i++)
+    for (double i = 0; i < arr.GetLength(0); i++)
     {
-        for (int j = 0; j < arr.GetLength(1); j++)   
+        for (double j = 0; j < arr.GetLength(1); j++)   
         {
             if (j == 0) Console.Write("[");
             if (j < arr.GetLength(1) - 1) Console.Write(arr[i, j] + ",");
@@ -35,3 +36,17 @@ void PrintMatrix(int[,] arr)
 
 double[,] matrix = CreateMatrixRndInt(3, 4, 1, 20);
 PrintMatrix(matrix);
+
+
+// double[,] a = new double[5, 10];
+
+// Random random = new Random();
+// for (int i = 0; i < 5; i++)
+// {
+//     for (int j = 0; j < 10; j++)
+//     {
+//         a[i, j] = random.NextDouble() * 100;
+//         Console.Write("{0,6:F2}", a[i, j]);
+//     }
+//     Console.WriteLine();
+// }
