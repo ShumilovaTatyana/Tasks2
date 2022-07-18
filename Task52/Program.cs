@@ -43,6 +43,18 @@ void PrintMatrix(int[,] arr)
     }
 }
 
+// int[] sum = new int[array.GetLength(0)];
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+//     sum[i] = 0;
+//     for (int j = 0; j < array.GetLength(1); j++)
+//     {
+//        sum[i] += array[i, j]; 
+//     }
+// }
+// Console.WriteLine($"sum[i]");
+
+
 double FindSredneeArifmetColumn(int[,] arr)
 {
     double res = 0;
@@ -51,6 +63,7 @@ double FindSredneeArifmetColumn(int[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
+            //if (j == 0) 
             res += arr[i, j];
             res1 = Math.Round(res / arr.GetLength(1), 1);
         }
