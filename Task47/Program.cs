@@ -22,31 +22,19 @@ return array;
 
 void PrintMatrix(double[,] arr)
 {
-    for (double i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        for (double j = 0; j < arr.GetLength(1); j++)   
+        for (int j = 0; j < arr.GetLength(1); j++)   
         {
             if (j == 0) Console.Write("[");
-            if (j < arr.GetLength(1) - 1) Console.Write(arr[i, j] + ",");
+            if (j < arr.GetLength(1) - 1) Console.Write(arr[i, j] + "|");
             else Console.Write(arr[i, j] + "]");
         }
         Console.WriteLine();
     }
 }
 
-double[,] matrix = CreateMatrixRndInt(3, 4, 1, 20);
+double[,] matrix = CreateMatrixRndInt(4, 4, -10, 10);
 PrintMatrix(matrix);
 
 
-// double[,] a = new double[5, 10];
-
-// Random random = new Random();
-// for (int i = 0; i < 5; i++)
-// {
-//     for (int j = 0; j < 10; j++)
-//     {
-//         a[i, j] = random.NextDouble() * 100;
-//         Console.Write("{0,6:F2}", a[i, j]);
-//     }
-//     Console.WriteLine();
-// }
