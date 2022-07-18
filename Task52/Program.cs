@@ -64,7 +64,7 @@ double FindSredneeArifmetColumn(int[,] arr)
         for (int j = 0; j < arr.GetLength(1); j++)
         {
             //if (j == 0) 
-            res += arr[i, j];
+            res += arr[0, j];
             res1 = Math.Round(res / arr.GetLength(1), 1);
         }
     }
