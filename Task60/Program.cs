@@ -14,7 +14,10 @@ int[, ,] CreateMatrixRndInt(int m, int n, int k, int min, int max)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new array(min, max + 1);
+        for (int k = 0; k < array.GetLength(?); k++)
+        {
+            array[i, j, k] = new array(min, max + 1);
+        }
         }
     }
 return array;
