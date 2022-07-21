@@ -51,19 +51,19 @@ PrintMatrix(matrix);
 
 int[,] resMatrix = new int[matrix.GetLength(0), matrix.GetLength(1)];
 
-void SelectionSort(int[,] arr)
+void SelectionSort(int[,] resMatrix)
 {
-    for (int i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < resMatrix.GetLength(0); i++)
     {
-        for (int j = 0; j <arr.GetLength(1); j++)
+        for (int j = 0; j < resMatrix.GetLength(1); j++)
         {
-            for (int k = 0; k < arr.GetLength(1) - j - 1; k++)
+            for (int k = 0; k < resMatrix.GetLength(1) - j - 1; k++)
             {
-                if (arr[i, k] > arr[i, k + 1])
+                if (resMatrix[i, k] > resMatrix[i, k + 1])
                 {
-                    int temp = arr[i, k];
-                    arr[i, k] = arr[i, k + 1];
-                    arr[i, k + 1] = temp;
+                    int temp = resMatrix[i, k];
+                    resMatrix[i, k] = resMatrix[i, k + 1];
+                    resMatrix[i, k + 1] = temp;
                 }
             }
         }
