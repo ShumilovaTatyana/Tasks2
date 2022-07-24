@@ -9,15 +9,16 @@ Console.WriteLine("Введите число N: ");
 int numN = int.Parse(Console.ReadLine());
 int sum = 0;
 
-void SumNum (int numM, int numN, int sum)
+void SumNum(int numM, int numN, int sum)
+{
+    if (numM < numN)
     {
-    if (numM < numN) 
-    {
-        Console.WriteLine($"Сумма натуральных элементов в промежутке от M до N: {sum}"); 
+        sum = sum + numM + 1;
+        Console.WriteLine($"Сумма натуральных элементов в промежутке от M до N: {sum}");
         return;
     }
-    sum = sum + numM + 1;
+    //sum = sum + numM + 1;
     SumNum(numM, numN, sum);
-    }
+}
 SumNum(numM, numN, sum);
 

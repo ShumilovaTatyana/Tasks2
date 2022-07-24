@@ -3,20 +3,20 @@
 
 Console.WriteLine("Введите количество строк матрицы 1: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите количество столбцов мытрицы 1: ");
+Console.WriteLine("Введите количество столбцов матрицы 1: ");
 int num11 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите мин элемент мытрицы 1: ");
+Console.WriteLine("Введите мин элемент матрицы 1: ");
 int minElem1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите макс элемент мытрицы 1: ");
+Console.WriteLine("Введите макс элемент матрицы 1: ");
 int maxElem1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите количество строк матрицы 2: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите количество столбцов мытрицы 2: ");
+Console.WriteLine("Введите количество столбцов матрицы 2: ");
 int num22 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите мин элемент мытрицы 2: ");
+Console.WriteLine("Введите мин элемент матрицы 2: ");
 int minElem2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите макс элемент мытрицы 2: ");
+Console.WriteLine("Введите макс элемент матрицы 2: ");
 int maxElem2 = Convert.ToInt32(Console.ReadLine());
 
 int[,] CreateMatrixRndInt(int m, int n, int min, int max)
