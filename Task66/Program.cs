@@ -13,12 +13,10 @@ void SumNum(int numM, int numN, int sum)
 {
     if (numM < numN)
     {
-        sum = sum + numM + 1;
+        sum = sum + (numM + 1);
         Console.WriteLine($"Сумма натуральных элементов в промежутке от M до N: {sum}");
         return;
     }
-    //sum = sum + numM + 1;
-    SumNum(numM, numN, sum);
 }
 SumNum(numM, numN, sum);
 

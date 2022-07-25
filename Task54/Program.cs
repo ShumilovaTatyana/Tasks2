@@ -71,6 +71,7 @@ void SelectionSort(int[,] resMatrix)
 }
 Console.WriteLine();
 PrintMatrix(resMatrix);
+SelectionSort(resMatrix);
 
 // void PrintMatrix(int[,] arr)
 // {
